@@ -351,7 +351,7 @@ class _WeatherState extends State<Weather> {
                                     temperature: futureTemp1),
                           ),
                           child: Text(
-                            '${DateFormat('HH:mm').format(intervalTime)}  ${futureTemp1.round()} °C, $condition',
+                            '${DateFormat('HH:mm').format(intervalTime)}  ${futureTemp1.round()} °C, $futureCond1',
                             textAlign: TextAlign.center,
                             style: const TextStyle(
                               fontSize: 20,
@@ -374,7 +374,7 @@ class _WeatherState extends State<Weather> {
                                     temperature: futureTemp2),
                           ),
                           child: Text(
-                            '${DateFormat('HH:mm').format(intervalTime.add(const Duration(hours: 3)))}  ${futureTemp2.round()} °C, $condition',
+                            '${DateFormat('HH:mm').format(intervalTime.add(const Duration(hours: 3)))}  ${futureTemp2.round()} °C, $futureCond2',
                             style: const TextStyle(
                               fontSize: 20,
                               color: Colors.white,
@@ -396,7 +396,7 @@ class _WeatherState extends State<Weather> {
                                     temperature: futureTemp3),
                           ),
                           child: Text(
-                            '${DateFormat('HH:mm').format(intervalTime.add(const Duration(hours: 6)))}  ${futureTemp3.round()} °C, $condition',
+                            '${DateFormat('HH:mm').format(intervalTime.add(const Duration(hours: 6)))}  ${futureTemp3.round()} °C, $futureCond3',
                             style: const TextStyle(
                               fontSize: 20,
                               color: Colors.white,
